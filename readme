@@ -1,0 +1,27 @@
+1. create nest project
+2. npm install openai
+3. Insérer le bout de code openai 
+4. Créez le fichier .env avec l'API key
+5. npm i --save @nestjs/config et import ConfigModule.forRoot()
+6. Récupérer les modèles 
+
+  // 1er test : récupérer les modèles
+  console.log(`Found ${response.data.data.length} models`);
+  for (let i = 0; i < response.data.data.length; i++) {
+    //console.table(response.data.object);
+    console.table(response.data.data[i]);
+  }
+
+7. Créez les folders "input" et "output" pour accueillir vos fichiers
+8. import * as fs from 'fs/promises';
+TODO
+
+
+
+  // // 1er test : récupérer les modèles
+  // const response = await openai.listModels();
+  // console.log(`Found ${response.data.data.length} models`);
+  // for (let i = 0; i < response.data.data.length; i++) {
+  //   //console.table(response.data.object);
+  //   console.table(response.data.data[i]);
+  // }
