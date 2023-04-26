@@ -16,7 +16,7 @@ $ npm run start:dev
 
 ## Stay in touch
 
-- Author - Nicolas Stübi
+- Author - [Nicolas Stübi](https://www.linkedin.com/in/nstubi/)
 
 ## License
 
