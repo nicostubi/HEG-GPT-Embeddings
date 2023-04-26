@@ -4,7 +4,7 @@
 $ npm install
 ```
 
-## Installation
+## Configuration
 
 Rename .env.template to .env and add your openai API key.
 
