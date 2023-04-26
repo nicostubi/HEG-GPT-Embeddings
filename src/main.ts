@@ -12,7 +12,7 @@ async function bootstrap() {
   await app.listen(3000);
 
   // todo improve (to put in relationship with embeddingsBatchSize and find the good "page size")
-  const nbWords = 3000; 
+  const nbWords = 30; 
   await generateRandomWords(nbWords);
   const embeddingsBatchSize = 1000;
 
