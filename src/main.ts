@@ -12,7 +12,7 @@ async function bootstrap() {
   await app.listen(3000);
 
   // todo improve (to put in relationship with embeddingsBatchSize and find the good "page size")
-  const nbWords = 30; 
+  const nbWords = 3000; 
   await generateRandomWords(nbWords);
   const embeddingsBatchSize = 1000;
 
@@ -23,12 +23,10 @@ async function bootstrap() {
   const openai = new OpenAIApi(configuration);
 
   const files = await listFiles('src/input/');
-
   const outputPath = 'src/output/vectors.tsv';
   const metadataPath = 'src/output/metadata.tsv';
   const vectorFile = createWriteStream(outputPath);
   const metadataFile = createWriteStream(metadataPath);
-
   const embeddings: Array<EmbeddingResult> = [];
   let nbWordsProcessed = 0;
   let apiCalls = 0;
